@@ -1,7 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-namespace: edu04-dev
+namespace: edu06-dev
 
 resources:
 - ../../base
@@ -15,7 +15,7 @@ patches:
     kind: Ingress
 
 images:
-- name: ktdseduacr.azurecr.io/edu04/samplejava
-  newName: ktdseduacr.azurecr.io/edu04/samplejava
+- name: ktdseduacr.azurecr.io/edu06/samplejava
+  newName: ktdseduacr.azurecr.io/edu06/samplejava
   newTag: v20241010171028
 
